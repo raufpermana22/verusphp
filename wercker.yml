@@ -4,9 +4,9 @@
 # Read more about containers on our dev center
 # https://devcenter.wercker.com/overview-and-core-concepts/containers/
 box:  
-  id: ruby:latest
+  id: golang
   ports:
-    - "8080"
+    - "5000"
 # This is the build pipeline. Pipelines are the core of wercker
 # Read more about pipelines on our dev center
 # https://devcenter.wercker.com/development/pipelines/
